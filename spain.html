@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Click the button to display the date.</p>
+
+    <button onclick="displayDate()">The time is?</button>
+    
+    <script>
+    function displayDate() {
+      document.getElementById("demo").innerHTML = Date();
+    }
+    </script>
+    
+   <head>
+    <title>Rollover with a Mouse Events</title>
+    
+    <script type = "text/javascript">
+       
+          if(document.images) {
+             var image1 = new Image();     // Preload an image
+             image1.src = "supreme.png";
+             var image2 = new Image();     // Preload second image
+             image2.src = "tumus.png";
+          }
+       //-->
+    </script>
+ </head>
+ 
+ <body>
+    <p>Move your mouse over the image to see the result</p>
+    
+    <a href = "#" onMouseOver = "document.myImage.src = image2.src;"
+       onMouseOut = "document.myImage.src = image1.src;">
+       <img name = "myImage" src = "nyanta.png" />
+    </a>
+ </body>
+</html>
+    
+    <p id="demo"></p>
+</body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photos</title>
+</head>
+<style>
+.content{
+    display:grid;
+    grid-auto-rows: auto;
+    grid-template-columns: 1fr  ;
+    text-align: center;
+
+}
+.effa{
+    width: 650px;
+}
+.sup{
+    width: 650px;
+}
+.tum{
+    width: 650px;
+}
+  
+
+button{
+    background-color: blueviolet;
+    padding: 10px 25px;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    outline: none;
+    cursor: pointer;
+    width: 650px;
+}
+
+@keyframes fadeBounce{
+  0%{
+    opacity: 0;
+    transform: translateY(-200%);
+  }
+  40%{
+    transform: translateY(0);
+
+  }
+
+  55%{
+    transform: translateY(-10px);
+
+  }
+
+  70%{
+    opacity: 1;
+
+    transform: translateY(0);
+
+  }
+
+  85%{
+    transform: translateY(-15px);
+
+  }
+
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.first button{
+    
+    transition: all 1s;
+}
+
+.first:hover button{
+    transform: scale(1.4);
+}
+
+ h1{
+    animation-name: fadeBounce;
+  animation-duration: 5s;
+}
+.first{
+    opacity: 0;
+    animation-fill-mode: forwards;
+ 
+    animation-name: fadeBounce;
+  animation-duration: 3s;
+  animation-delay: 1s;
+}
+
+.effa2{
+    opacity: 0;
+    animation-name: fadeBounce;
+    animation-fill-mode: forwards;
+    
+  animation-duration: 3s;
+  animation-delay: 2s;
+}
+
+.tumus{
+    opacity: 0;
+    animation-fill-mode: forwards;
+
+    animation-name: fadeBounce;
+  animation-duration: 3s;
+  animation-delay: 3s;
+}
+
+.nyanta{
+    opacity: 0;
+    animation-fill-mode: forwards;
+    animation-name: fadeBounce;
+  animation-duration: 3s;
+  animation-delay: 4s;
+}
+
+
+@keyframes slideSpin{
+100%{
+
+    transform: translateX(38%);
+}
+
+50%{
+    transform: translateX(19%) scale(.7);
+}
+}
+
+h1{
+    animation: slideSpin 2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+</style>
+<body>
+    <h1>vote for your favourate group</h1>
+    <div class="content">
+        <div class="first">
+       <a href="supreme.html"> <img src="supreme.png" class="tum" ></a> 
+
+        <br>
+        <button> vote for supreme as best group</button>
+
+        </div>
+        <div class="effa2">
+           <a href="ohy3m.html">  <img src="effa.png" class="tum"></a>
+            <br>
+        <button> vote for ohy3m as best group</button>
+
+        </div>
+        <div class="tumus">
+            <img src="tumus.png" class="tum">
+            <br>
+        <button> vote for tumus as best group</button>
+
+        </div>
+        <div class="nyanta">
+            <img src="nyanta.png" class="tum">
+            <br>
+        <button> vote for nyanta boys as best group</button>
+
+
+        </div>
+
+
+
+
+    </div>
+
+
+</body>
+</html>
